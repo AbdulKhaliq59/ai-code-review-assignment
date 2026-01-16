@@ -1,8 +1,9 @@
-def sum_positive_numbers(numbers):
+def average_valid_measurements(values):
     total = 0
+    count = len(values)
 
-    for n in numbers:
-        if n > 0:
-            total += n
+    for v in values:
+        if v is not None:
+            total += float(v)
 
-    return total
+    return total / count
